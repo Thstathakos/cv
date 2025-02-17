@@ -53,8 +53,12 @@
 <div class="bottom-container">
   <a class="footer-link" href="https://www.linkedin.com/in/theodore-stathakos-bb923a1b9/">LinkedIn</a>
   <a class="footer-link" href="https://github.com/Thstathakos">GitHub</a>
-  <a class="footer-link" href="hhttps://github.com/Thstathakos/cv">Website</a>
-  <p class="copyright">© 2022 Theodoros Stathakos.</p>
+  <a class="footer-link" href="https://github.com/Thstathakos/cv">Website</a>
+  <p class="copyright">© <span id="year"></span> Theodoros Stathakos.</p>
 </div>
-    </body>
-</html>
+
+<script>
+  // Dynamically update the year in the copyright section
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+</script>
